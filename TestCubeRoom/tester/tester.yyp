@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0b21bbf7-584c-422d-bdc2-4d2884c61f71",
+            "Value": {
+                "id": "9c8a70e4-dfc8-4462-aded-7a739815112d",
+                "resourcePath": "objects\\obj_lifeform\\obj_lifeform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0b4770eb-1a0d-4f94-8f22-0b3e2eead2fc",
             "Value": {
                 "id": "18ca025d-c74a-4b39-99ce-903ae3bc2e45",
