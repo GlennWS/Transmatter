@@ -88,11 +88,6 @@ if (keyboard_check(vk_control)) {
 	player_speed = 7;
 	sprite_index = spr_Sarah_dodge_roll;
 	image_speed = player_speed / 3;
-	
-	with(obj_player)
-	{
-		face_index = 3;
-	}
 	moved = true;
 }
 
@@ -113,8 +108,9 @@ if(keyboard_check(vk_space))
 		// 1 -> left
 		// 2 -> down
 		// 3 -> right
-		if(face_index == 0)
+		/*if(face_index == 0)
 		{
+			sprite_index = spr_swing_up;
 			// instantiate instance of the proper hitbox for each of these cases
 			
 			// then run the collision test on the enemy there
@@ -123,15 +119,29 @@ if(keyboard_check(vk_space))
 		}
 		else if(face_index == 1)
 		{
-			
+			sprite_index = spr_swing_left;
 		}
 		else if(face_index == 2)
 		{
-			
+			sprite_index = spr_swing_down;
 		}
 		else if(face_index == 3)
 		{
-			
+			sprite_index = spr_swing_right;
+		}*/
+		switch (face_index) {
+			case 0:
+				sprite_index = spr_swing_up;
+				break;
+			case 1:
+				sprite_index = spr_swing_left;
+				break;
+			case 2:
+				sprite_index = spr_swing_down;
+				break;
+			case 3:
+				sprite_index = spr_swing_right;
+				break;
 		}
 	}
 }
