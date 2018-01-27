@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// Initialisation
 
-phy_fixed_rotation = true;
+event_inherited();
 player_speed = 4;

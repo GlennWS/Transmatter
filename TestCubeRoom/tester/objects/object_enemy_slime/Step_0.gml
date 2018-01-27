@@ -1,4 +1,5 @@
-/// Slime Movement
+/// Run the current state
 
-phy_position_x += sign(obj_player.x - x) * spd;
-phy_position_y += sign(obj_player.y - y) * spd;
+event_inherited();
+
+script_execute(state);

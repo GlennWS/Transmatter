@@ -1,5 +1,7 @@
 /// Basic Player Movement
 
+event_inherited();
+
 /// Arrow Key ///
 // Move Right
 if (keyboard_check(vk_right)) {

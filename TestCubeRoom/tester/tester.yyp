@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "205fc4cc-4bc2-438f-90e9-bb1e52b5ae77",
+            "Value": {
+                "id": "6de20887-eb1a-49b1-b3d1-6b3c75b6a295",
+                "resourcePath": "scripts\\scr_enemy_chase_state\\scr_enemy_chase_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d3dd9f4-9e36-4647-9efd-f225fbb94b9a",
             "Value": {
                 "id": "b9fe88e3-2c32-4963-ac2e-cc7813583ecb",
@@ -76,6 +84,14 @@
                 "id": "711daf1d-39b6-4d72-881c-ff604b7d9a57",
                 "resourcePath": "views\\3c54c026-17e3-407b-aa80-bd77b6d1494d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4719407a-78bf-4363-964a-a9745289dfed",
+            "Value": {
+                "id": "d6238622-08f2-47f3-a8dd-eff0ca122be6",
+                "resourcePath": "scripts\\scr_enemy_wander_state\\scr_enemy_wander_state.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -151,6 +167,14 @@
             }
         },
         {
+            "Key": "87a92959-6e63-4253-adc2-62d7a1c372f8",
+            "Value": {
+                "id": "ce0ca7e1-c542-450f-8889-374371ce1b60",
+                "resourcePath": "scripts\\scr_enemy_choose_next_state\\scr_enemy_choose_next_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9f59bb78-b9ca-4797-9b68-8ad09332331e",
             "Value": {
                 "id": "128f9789-f7ed-4698-a7a7-0576d93dce45",
@@ -175,10 +199,10 @@
             }
         },
         {
-            "Key": "a2b4b918-34dc-4858-a322-a7d493402f1a",
+            "Key": "b054ee9b-df8b-4262-8602-8c3b683ad3bc",
             "Value": {
-                "id": "f517c081-e0b4-4556-9f3a-98632d5c6dd1",
-                "resourcePath": "scripts\\script0\\script0.yy",
+                "id": "2708836f-f523-44b2-9999-d0015b5a091d",
+                "resourcePath": "scripts\\scr_enemy_idle_state\\scr_enemy_idle_state.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -237,10 +261,22 @@
                 "resourcePath": "views\\f7e7020e-ebe3-4e84-9558-e1757287b649.yy",
                 "resourceType": "GMFolder"
             }
+        },
+        {
+            "Key": "fe1d3707-7825-4cdd-90ed-9737bfbd1291",
+            "Value": {
+                "id": "84f8dcde-6172-44da-98ed-24f0f19f5cf3",
+                "resourcePath": "scripts\\scr_check_for_player\\scr_check_for_player.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
-        "a2b4b918-34dc-4858-a322-a7d493402f1a"
+        "b054ee9b-df8b-4262-8602-8c3b683ad3bc",
+        "4719407a-78bf-4363-964a-a9745289dfed",
+        "205fc4cc-4bc2-438f-90e9-bb1e52b5ae77",
+        "87a92959-6e63-4253-adc2-62d7a1c372f8",
+        "fe1d3707-7825-4cdd-90ed-9737bfbd1291"
     ],
     "tutorial": ""
 }
