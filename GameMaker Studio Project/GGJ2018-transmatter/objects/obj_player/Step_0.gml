@@ -2,6 +2,10 @@
 
 event_inherited();
 
+if (keyboard_check(vk_escape)) {
+	game_end();
+}
+
 /// Arrow Key ///
 // Move Right
 if (keyboard_check(vk_right)) 
