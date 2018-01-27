@@ -86,21 +86,25 @@ var temp_pos_x = phy_position_x;
 		if(gamepad_axis_value(0, gp_axislh) >= 0.3)
 		{
 			temp_pos_x += player_speed;
+			sprite_index = spr_right;
 		}
 		
 		if(gamepad_axis_value(0, gp_axislh) <= -0.3)
 		{
 			temp_pos_x -= player_speed;
+			sprite_index = spr_left;
 		}
 		
 		if(gamepad_axis_value(0, gp_axislv) >= 0.3)
 		{
 			temp_pos_y += player_speed;
+			sprite_index = spr_front;
 		}
 		
 		if(gamepad_axis_value(0, gp_axislv) <= -0.3)
 		{
 			temp_pos_y -= player_speed;
+			sprite_index = spr_back;
 		}
 		
 		//if(gamepad_button_check(0, gp_padu))
