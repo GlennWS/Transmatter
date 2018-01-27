@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "33326039-dc1c-4b54-bc2b-c48c1251ba54",
+            "Value": {
+                "id": "4e8b281b-b2eb-4b2d-aeda-7fcd46fafb09",
+                "resourcePath": "objects\\obj_damage\\obj_damage.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "36ec959d-f023-41b7-bb50-7bf0165478d0",
             "Value": {
                 "id": "22bcb402-4f6b-485d-bf0b-7e361b31227e",
@@ -100,6 +108,22 @@
                 "id": "4af771e7-4326-4dbf-974a-7a2a3312728e",
                 "resourcePath": "views\\4c345c25-e16c-42b0-8113-3209e1c9e5cf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4f96cda1-21a0-4bcc-a34e-2d04f41fc965",
+            "Value": {
+                "id": "e39954f0-c377-4774-92da-bf065d36d9b6",
+                "resourcePath": "scripts\\scr_enemy_stall_state\\scr_enemy_stall_state.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5d05f73e-8f4c-489d-a276-3dca1f6741d8",
+            "Value": {
+                "id": "480dfe9c-7a6e-4bd6-8d65-5b0449e8e70b",
+                "resourcePath": "sprites\\player_damage\\player_damage.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -276,7 +300,8 @@
         "4719407a-78bf-4363-964a-a9745289dfed",
         "205fc4cc-4bc2-438f-90e9-bb1e52b5ae77",
         "87a92959-6e63-4253-adc2-62d7a1c372f8",
-        "fe1d3707-7825-4cdd-90ed-9737bfbd1291"
+        "fe1d3707-7825-4cdd-90ed-9737bfbd1291",
+        "4f96cda1-21a0-4bcc-a34e-2d04f41fc965"
     ],
     "tutorial": ""
 }
