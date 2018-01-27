@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "005571fe-44d8-4d2f-837c-a51db08f9f2b",
+            "Value": {
+                "id": "c47b2859-5171-4d0b-a343-3663245544cb",
+                "resourcePath": "sprites\\spr_dodge_cloud\\spr_dodge_cloud.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "01121143-e9c0-403a-88f7-8bc95c784674",
             "Value": {
                 "id": "6544fc7b-7d82-49a9-bcc9-d7a8299b85b2",
@@ -455,10 +463,26 @@
             }
         },
         {
+            "Key": "a8c7dbe5-809e-4149-8015-3944e2681f0b",
+            "Value": {
+                "id": "ca3976d3-5aa1-4fa0-9e2f-164d1d0ac034",
+                "resourcePath": "sprites\\spr_Sarah_dodge_roll\\spr_Sarah_dodge_roll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b25d50bc-a870-4f28-8897-0bc87a8a9ef8",
             "Value": {
                 "id": "d1755f83-88ae-48a5-913c-6c18f5a0c3a2",
                 "resourcePath": "views\\b25d50bc-a870-4f28-8897-0bc87a8a9ef8.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b4020523-ebfe-4e47-99b4-840df77812cc",
+            "Value": {
+                "id": "9a7ffaa3-fb46-49db-8e37-91c99b21ac77",
+                "resourcePath": "views\\b4020523-ebfe-4e47-99b4-840df77812cc.yy",
                 "resourceType": "GMFolder"
             }
         },
