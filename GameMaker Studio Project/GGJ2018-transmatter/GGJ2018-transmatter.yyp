@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "7471b163-90f9-4b5a-8f7b-1dc71161db2a",
+            "Value": {
+                "id": "5f623781-ad6f-447c-8677-b63a761750fb",
+                "resourcePath": "sprites\\spr_Sarah_dodge_roll_left\\spr_Sarah_dodge_roll_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "76313489-56e5-4ca5-be32-12e1e396bd3d",
             "Value": {
                 "id": "39492dcc-ad7a-490e-b0b4-b5739fbdf383",
@@ -570,7 +578,7 @@
             "Key": "a8c7dbe5-809e-4149-8015-3944e2681f0b",
             "Value": {
                 "id": "ca3976d3-5aa1-4fa0-9e2f-164d1d0ac034",
-                "resourcePath": "sprites\\spr_Sarah_dodge_roll\\spr_Sarah_dodge_roll.yy",
+                "resourcePath": "sprites\\spr_Sarah_dodge_roll_right\\spr_Sarah_dodge_roll_right.yy",
                 "resourceType": "GMSprite"
             }
         },
