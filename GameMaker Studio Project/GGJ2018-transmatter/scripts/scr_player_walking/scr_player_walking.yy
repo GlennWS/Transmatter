@@ -1,8 +1,8 @@
 {
-    "id": "c874f0e5-33a8-4eac-8222-f5b985318a2c",
+    "id": "c38d0f11-ad13-43f8-8fdc-f4213b56b79b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "input_get",
+    "name": "scr_player_walking",
     "IsCompatibility": false,
     "IsDnD": false
 }
