@@ -4,10 +4,8 @@
     "mvc": "1.1",
     "name": "9f0353bf-591a-4325-a80f-3ed7a563da0f",
     "children": [
-        "bc20d0bc-b929-454d-9e08-24f9f2d7b876",
-        "72af73df-40d0-4500-816c-f8626ad834d5",
-        "642a1288-ccf2-48ba-8be6-76819f4eea6f",
-        "7e34e576-1f90-4fde-a364-e1b49a961269"
+        "be85263c-4cea-4fa4-8274-8e2d34a9e717",
+        "c2efe0e5-3b2b-4d9e-90b6-4c8d044af163"
     ],
     "filterType": "GMSprite",
     "folderName": "Sarah",
