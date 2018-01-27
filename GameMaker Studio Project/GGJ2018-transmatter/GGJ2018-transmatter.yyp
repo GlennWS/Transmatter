@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "642a1288-ccf2-48ba-8be6-76819f4eea6f",
+            "Value": {
+                "id": "2af59398-43a9-4241-9f30-b9ac4df7a947",
+                "resourcePath": "sprites\\spr_Sarah_walk_left\\spr_Sarah_walk_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65d76cb2-a850-45c4-a347-ae059169359c",
             "Value": {
                 "id": "c6409f49-04c5-46fb-a703-a34f2fdcd2cd",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "72af73df-40d0-4500-816c-f8626ad834d5",
+            "Value": {
+                "id": "6a3e021f-a857-4424-8b88-5e969ef77991",
+                "resourcePath": "sprites\\spr_Sarah_walk_down\\spr_Sarah_walk_down.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "743fcdad-0c75-4e5f-9a88-4a1329e4f53c",
             "Value": {
                 "id": "453054fb-5e42-4598-9793-8e98b02f140a",
@@ -275,6 +291,14 @@
             "Value": {
                 "id": "43192fa0-c989-4324-b1ab-71d370e85241",
                 "resourcePath": "sprites\\spr_ground\\spr_ground.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7e34e576-1f90-4fde-a364-e1b49a961269",
+            "Value": {
+                "id": "1d008a42-c2eb-4329-b0b7-c24bd27720ed",
+                "resourcePath": "sprites\\spr_Sarah_walk_right\\spr_Sarah_walk_right.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -343,6 +367,14 @@
             }
         },
         {
+            "Key": "9f0353bf-591a-4325-a80f-3ed7a563da0f",
+            "Value": {
+                "id": "3b4a319a-c78d-4819-b0d9-5851925c4fd6",
+                "resourcePath": "views\\9f0353bf-591a-4325-a80f-3ed7a563da0f.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "a0ab4f3f-4477-411a-b031-16d743728af9",
             "Value": {
                 "id": "77558aca-ef08-4504-9de1-a3cf7da02e51",
@@ -371,6 +403,14 @@
             "Value": {
                 "id": "5532afde-1d3a-4575-8562-6d9b94c74068",
                 "resourcePath": "sprites\\sprite4\\sprite4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "bc20d0bc-b929-454d-9e08-24f9f2d7b876",
+            "Value": {
+                "id": "6b730f13-6850-4ffd-ba91-b5f68cd07a1f",
+                "resourcePath": "sprites\\spr_Sarah_walk_up\\spr_Sarah_walk_up.yy",
                 "resourceType": "GMSprite"
             }
         },
