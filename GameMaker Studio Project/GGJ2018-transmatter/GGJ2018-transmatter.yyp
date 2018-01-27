@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "3e03c250-aebc-4b19-ab35-d142603b0720",
+            "Value": {
+                "id": "8aa7a877-9314-42d4-9ec4-b224aa80d6c4",
+                "resourcePath": "sprites\\spr_swing_up_hitbox\\spr_swing_up_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "42514b96-f039-4dc7-8174-fa80c9638fd9",
             "Value": {
                 "id": "db6582e1-6587-4e99-824c-0963c8d94277",
@@ -495,6 +503,14 @@
             }
         },
         {
+            "Key": "b9e118fb-520e-4198-a311-3c4ed1dbfa8d",
+            "Value": {
+                "id": "5ffe1d58-6fcf-495f-8577-0ecc38cded9e",
+                "resourcePath": "sprites\\spr_swing_down_hitbox\\spr_swing_down_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bc20d0bc-b929-454d-9e08-24f9f2d7b876",
             "Value": {
                 "id": "6b730f13-6850-4ffd-ba91-b5f68cd07a1f",
@@ -580,6 +596,14 @@
                 "id": "0f0962fa-791d-4f53-af26-f88020884747",
                 "resourcePath": "sprites\\spr_impassable\\spr_impassable.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d98e900b-9514-4499-a4e7-a115773787d5",
+            "Value": {
+                "id": "a5392f11-d306-4390-980c-2360cf4186d7",
+                "resourcePath": "objects\\obj_hitbox\\obj_hitbox.yy",
+                "resourceType": "GMObject"
             }
         },
         {

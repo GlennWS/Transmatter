@@ -28,6 +28,11 @@ if((keyboard_check(vk_up)) || (keyboard_check(ord("W"))))
 	temp_pos_y -= player_speed;
 	sprite_index = spr_Sarah_walk_up;
 	image_speed = player_speed / 3;
+	
+	with(obj_player)
+	{
+		face_index = 0;
+	}
 	moved = true;
 }
 
@@ -37,6 +42,11 @@ if((keyboard_check(vk_left)) || (keyboard_check(ord("A"))))
 	temp_pos_x -= player_speed;
 	sprite_index = spr_Sarah_walk_left;
 	image_speed = player_speed / 3;
+	
+	with(obj_player)
+	{
+		face_index = 1;
+	}
 	moved = true;
 }
 
@@ -46,6 +56,11 @@ if((keyboard_check(vk_down)) || (keyboard_check(ord("S"))))
 	temp_pos_y += player_speed;
 	sprite_index = spr_Sarah_walk_down;
 	image_speed = player_speed / 3;
+	
+	with(obj_player)
+	{
+		face_index = 2;
+	}
 	moved = true;
 }
 
@@ -55,6 +70,11 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 	temp_pos_x += player_speed;
 	sprite_index = spr_Sarah_walk_right;
 	image_speed = player_speed / 3;
+	
+	with(obj_player)
+	{
+		face_index = 3;
+	}
 	moved = true;
 }
 
@@ -66,6 +86,38 @@ if(keyboard_check(vk_nokey))
 	image_index = 0;
 	player_speed = 3.5;
 }
+
+if(keyboard_check(vk_space))
+{
+	with(obj_player)
+	{
+		// 0 -> up 
+		// 1 -> left
+		// 2 -> down
+		// 3 -> right
+		if(face_index == 0)
+		{
+			// instantiate instance of the proper hitbox for each of these cases
+			
+			// then run the collision test on the enemy there
+			
+			// https://www.youtube.com/watch?v=vJ6ksNLLFiQ // 9:47
+		}
+		else if(face_index == 1)
+		{
+			
+		}
+		else if(face_index == 2)
+		{
+			
+		}
+		else if(face_index == 3)
+		{
+			
+		}
+	}
+}
+
 
 // If Shift is being pressed this frame, run
 if(keyboard_check(vk_shift))
