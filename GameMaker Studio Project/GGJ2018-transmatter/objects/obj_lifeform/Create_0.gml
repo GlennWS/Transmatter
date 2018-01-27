@@ -1,0 +1,3 @@
+/// Initialise the lifeform
+
+phy_fixed_rotation = true;

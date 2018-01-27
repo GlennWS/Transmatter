@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "70c81e18-d8e2-436b-8966-af336700c9e8",
+            "Value": {
+                "id": "16359a9b-6016-46c4-aa6b-26b5bd5047fa",
+                "resourcePath": "objects\\obj_lifeform\\obj_lifeform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "72747e60-331e-4cf3-b875-5f077ca7e380",
             "Value": {
                 "id": "a781dd9f-fab9-4102-8074-639594054aff",
