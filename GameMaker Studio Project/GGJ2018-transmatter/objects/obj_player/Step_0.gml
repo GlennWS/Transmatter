@@ -2,6 +2,8 @@
 
 event_inherited();
 
+image_alpha = 1.0;
+
 // Obtain gamepad counter
 var moved = false;
 var padcount;
@@ -78,6 +80,19 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 	moved = true;
 }
 
+// Dodge Rolling
+/*if (keyboard_check_pressed(vk_control)) {
+	player_speed = 7;
+	sprite_index = spr_Sarah_dodge_roll;
+	image_speed = player_speed / 3;
+	
+	with(obj_player)
+	{
+		face_index = 3;
+	}
+	moved = true;
+}*/
+
 // If no movement is pressed, do not cycle animations
 // Set index to the first keyframe and reset walk speed
 if(keyboard_check(vk_nokey))
@@ -118,11 +133,13 @@ if(keyboard_check(vk_space))
 	}
 }
 
-
 // If Shift is being pressed this frame, run
 if(keyboard_check(vk_shift))
 {
 	player_speed = 7;
+	var dash = instance_create_depth(x, y, -1, obj_dash_effect);
+	dash.sprite_index = sprite_index;
+	dash.image_index = image_index;
 }
 
 if(!keyboard_check(vk_shift))
