@@ -81,7 +81,10 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 }
 
 // Dodge Rolling
-/*if (keyboard_check_pressed(vk_control)) {
+// Needs to be keyboard_check_pressed instead of key_board check
+// Must do a full animation cycle + movement before executing any other movement
+// Has to account for the axis in which the player is facing.
+if (keyboard_check(vk_control)) {
 	player_speed = 7;
 	sprite_index = spr_Sarah_dodge_roll;
 	image_speed = player_speed / 3;
@@ -91,7 +94,7 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 		face_index = 3;
 	}
 	moved = true;
-}*/
+}
 
 // If no movement is pressed, do not cycle animations
 // Set index to the first keyframe and reset walk speed
