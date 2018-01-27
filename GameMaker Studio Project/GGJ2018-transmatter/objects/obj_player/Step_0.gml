@@ -81,7 +81,7 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 }
 
 // Dodge Rolling
-// Needs to be keyboard_check_pressed instead of key_board check
+// Needs to be keyboard_check_pressed instead of keyboard_check
 // Must do a full animation cycle + movement before executing any other movement
 // Has to account for the axis in which the player is facing.
 if (keyboard_check(vk_control)) {

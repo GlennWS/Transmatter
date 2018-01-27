@@ -2,6 +2,8 @@
 
 event_inherited();
 image_speed = 0;
+depth = -1;
+
 // Face index for attack
 var face_index = 2; // DOWN
 // 0 -> up 

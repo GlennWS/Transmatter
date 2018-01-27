@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "8cb6730d-8dd5-44fe-b1f6-475ba5aa8a7d",
+            "Value": {
+                "id": "079fc455-d8af-4a23-a148-e83196acca38",
+                "resourcePath": "sprites\\spr_telepad\\spr_telepad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8d983a39-b261-42ad-9145-28f63e9ac837",
             "Value": {
                 "id": "0d92620d-332f-4c40-b9ad-23e8db82b7d2",
@@ -708,6 +716,14 @@
                 "id": "dd91f279-c619-44e6-b903-44de84657b2b",
                 "resourcePath": "views\\f8350421-6426-40bd-9d52-23421a392394.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f8e486ff-4a1b-4331-a8cb-66c82c4d5242",
+            "Value": {
+                "id": "d7c0ccf5-735e-4433-a6b4-7e15e396d24a",
+                "resourcePath": "objects\\obj_telepad\\obj_telepad.yy",
+                "resourceType": "GMObject"
             }
         },
         {
