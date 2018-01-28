@@ -11,5 +11,5 @@ alarm[0] = room_speed * irandom_range(2, 5);
 sight = 64;
 targetx = 0;
 targety = 0;
-difficulty = 1;
+difficulty = 0;
 experience_worth = level * (difficulty + 1);

@@ -367,6 +367,14 @@
             }
         },
         {
+            "Key": "57eb3837-bf72-48b4-9409-ae3c7fa0b605",
+            "Value": {
+                "id": "a196213b-cc08-41fd-bece-b311b0aa000a",
+                "resourcePath": "views\\57eb3837-bf72-48b4-9409-ae3c7fa0b605.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "5935e062-f09e-48c0-8bef-20d84160e77c",
             "Value": {
                 "id": "167b09a9-1312-465f-8038-c0fad1ad0f26",
@@ -703,11 +711,11 @@
             }
         },
         {
-            "Key": "8efea639-45a4-4814-8d99-dca298a55204",
+            "Key": "8f5ad2df-a068-4233-9a8d-bf00dce863bd",
             "Value": {
-                "id": "a057071b-d82f-4a28-b165-7a035679716e",
-                "resourcePath": "scripts\\get_input\\get_input.yy",
-                "resourceType": "GMScript"
+                "id": "b8e43685-638d-46e6-b9ec-15b3fd9805f2",
+                "resourcePath": "sprites\\spr_levelup\\spr_levelup.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -716,6 +724,14 @@
                 "id": "3731aa48-6857-4f4f-a793-2ac860d2de48",
                 "resourcePath": "scripts\\scr_levelup\\scr_levelup.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "913b87c6-b53b-4cef-a191-c1bfcd429a27",
+            "Value": {
+                "id": "40e495e8-da8b-4147-93b0-a3eaafd64c16",
+                "resourcePath": "objects\\obj_levelup\\obj_levelup.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -879,6 +895,14 @@
             }
         },
         {
+            "Key": "c772de8d-9502-4be1-8210-721a1767ec41",
+            "Value": {
+                "id": "cdcaf9e6-b1ad-4949-886f-1fb04a28773a",
+                "resourcePath": "sounds\\snd_levelup\\snd_levelup.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c80c5062-a8e5-49d0-a85b-5982b13a7f8f",
             "Value": {
                 "id": "d71436b4-2867-4d42-8642-936a40cb7c3a",
@@ -1031,6 +1055,14 @@
             }
         },
         {
+            "Key": "ed9ff92d-7b78-4cc0-a955-5a70ba199d2f",
+            "Value": {
+                "id": "943e0daa-767b-4ee2-9d61-3a3d386d1e5e",
+                "resourcePath": "sounds\\snd_dodge\\snd_dodge.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "f03881fb-af7c-4de2-ba03-31c94762f7df",
             "Value": {
                 "id": "8824945b-76e5-4850-8273-37c8b33dc32f",
@@ -1131,7 +1163,6 @@
         "f2f7c81b-017e-402b-ad61-3374bf067c95",
         "d72310a7-f8b3-4284-b09a-c0b7947d0969",
         "d8e9b2e0-d98d-4268-8d11-22de192bc442",
-        "8efea639-45a4-4814-8d99-dca298a55204",
         "2c650247-6c87-4073-884c-c3fe56a8f01c",
         "3121938e-5cc2-4b3c-a0e1-a0e4e8efc822",
         "90a2e462-7a68-44db-a33e-b68218b6a618"

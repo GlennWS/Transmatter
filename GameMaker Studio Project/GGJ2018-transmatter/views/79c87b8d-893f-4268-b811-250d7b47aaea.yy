@@ -5,7 +5,8 @@
     "name": "79c87b8d-893f-4268-b811-250d7b47aaea",
     "children": [
         "b25d50bc-a870-4f28-8897-0bc87a8a9ef8",
-        "9f0353bf-591a-4325-a80f-3ed7a563da0f"
+        "9f0353bf-591a-4325-a80f-3ed7a563da0f",
+        "57eb3837-bf72-48b4-9409-ae3c7fa0b605"
     ],
     "filterType": "GMSprite",
     "folderName": "Character",

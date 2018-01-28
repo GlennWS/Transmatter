@@ -8,6 +8,10 @@ enum directions
 {
 	down = 0, left = 1, right = 2, up = 3
 }
+spr_array_dodging[directions.down] = spr_Sarah_dodge_roll_left;
+spr_array_dodging[directions.left] = spr_Sarah_dodge_roll_left;
+spr_array_dodging[directions.right] = spr_Sarah_dodge_roll_right;
+spr_array_dodging[directions.up] = spr_Sarah_dodge_roll_right;
 
 spr_array_walking[directions.down]	= spr_Sarah_walk_down;
 spr_array_walking[directions.up]	= spr_Sarah_walk_up;
@@ -49,7 +53,10 @@ player_speed = 3.5;
 temp_pos_x = phy_position_x;
 temp_pos_y = phy_position_y;
 
+aud_lim_sword = false;
+aud_lim_dodge = false;
 player_attacking = false;
+player_dodging = false;
 attack_active = false;
 moveable = true;
 iframed = false;

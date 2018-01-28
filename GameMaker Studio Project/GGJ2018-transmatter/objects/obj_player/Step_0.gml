@@ -12,6 +12,71 @@ event_inherited();
 
 #region
 
+//if(gamepad_button_check(0, gp_face1))
+//{
+//	show_debug_message("A button pressed. Confirm/Attack");
+//}
+//
+//if(gamepad_button_check(0, gp_face4))
+//{
+//	show_debug_message("Y button pressed. Open Menu");
+//}
+//
+//if(gamepad_button_check(0, gp_face3))
+//{
+//	show_debug_message("X button pressed. Dodge Roll");
+//}
+//
+//if(gamepad_axis_value(0, gp_axislh) >= 0.3)
+//{
+//	temp_pos_x += player_speed;
+//	sprite_index = spr_right;
+//}
+//
+//if(gamepad_axis_value(0, gp_axislh) <= -0.3)
+//{
+//	temp_pos_x -= player_speed;
+//	sprite_index = spr_left;
+//}
+//
+//if(gamepad_axis_value(0, gp_axislv) >= 0.3)
+//{
+//	temp_pos_y += player_speed;
+//	sprite_index = spr_front;
+//}
+//
+//if(gamepad_axis_value(0, gp_axislv) <= -0.3)
+//{
+//	temp_pos_y -= player_speed;
+//	sprite_index = spr_back;
+//}
+
+//if(gamepad_button_check(0, gp_padu))
+//{
+//	//show_debug_message("D-Pad UP. Move Character/Menu");
+//	temp_pos_y -= player_speed;
+//}
+//
+//if(gamepad_button_check(0, gp_padd))
+//{
+//	//show_debug_message("D-Pad DOWN. Move Character/Menu");
+//	temp_pos_y += player_speed;
+//}
+//
+//if(gamepad_button_check(0, gp_padl))
+//{
+//	//show_debug_message("D-Pad LEFT. Move Character/Menu");
+//	temp_pos_x -= player_speed;
+//}
+//
+//if(gamepad_button_check(0, gp_padr))
+//{
+//	//show_debug_message("D-Pad RIGHT. Move Character/Menu");
+//	temp_pos_x += player_speed;
+//}
+
+
+
 if(keyboard_check(vk_escape))
 {
 	game_end();
@@ -56,7 +121,7 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 	// Update the movement flag for this frame - remember to clear it after the movement script
 	obj_player.moved_right = 1;
 	obj_player.player_state = states.walking;
-	
+
 	// Update the player direction as the most recent, in executed order
 	obj_player.player_direction = directions.right;
 }
@@ -66,10 +131,31 @@ if(keyboard_check_pressed(vk_space))
 	//show_debug_message("Should switch to attack.");
 	player_state = states.attacking;
 	obj_player.sprite_index = spr_array_attacking[player_direction];
-	audio_play_sound(snd_sword, 10, false);
+	if(!aud_lim_sword)
+	{
+		audio_play_sound(snd_sword, 10, false);
+		aud_lim_sword = true;
+		alarm[4] = 34;
+	}
 	obj_player.image_speed = 1;
 	obj_player.alarm[3] = 15;
 }
+
+//if (keyboard_check(vk_control)) 
+//{
+//	player_state = states.dodging;
+//	obj_player.sprite_index = spr_array_dodging[player_direction];
+//	player_dodging = true;
+//	if(!aud_lim_dodge)
+//	{
+//		audio_play_sound(snd_dodge, 10, false);
+//		aud_lim_dodge = true;
+//		alarm[5] = 60;
+//	}
+//	obj_player.image_speed = 1;
+//	obj_player.alarm[6] = 60;
+//	moved = true;
+//}
 
 #endregion
 
@@ -137,6 +223,8 @@ if(player_state = states.walking)
 		player_speed = 3.5;
 	}
 	
+	
+	
 	if(keyboard_check(vk_nokey))
 	{
 		image_index = 0;
@@ -194,7 +282,7 @@ else if(player_state = states.attacking)
 					show_debug_message("Enemy hit");
 					with (other) 
 					{
-						other.hp -= 1;
+						other.hp -= floor(obj_player.damage);
 						
 						if (other.hp <= 0) 
 						{
@@ -219,10 +307,48 @@ else if(player_state = states.attacking)
 		player_attacking = false;
 	}
 }
+//else if (player_state = states.dodging)
+//{
+//show_debug_message(string(player_dodging));
+//	if(image_index < 13)
+//	{
+//		switch(player_direction)
+//		{
+//			case directions.up:
+//				temp_pos_x = x;
+//				temp_pos_y -= player_speed;
+//				break;
+//			case directions.down:
+//				temp_pos_x = x;
+//				temp_pos_y += player_speed;
+//				break;
+//			case directions.right:
+//				temp_pos_x += player_speed;
+//				temp_pos_y = y;
+//				break;
+//			case directions.left:
+//				temp_pos_x -= player_speed;
+//				temp_pos_y = y;
+//				break;
+//		}
+//		phy_position_x = temp_pos_x;
+//		phy_position_y = temp_pos_y;
+//		// Immovable - auto move
+//		// find the direction looking at, and set the temp_pos_x/y to represent the player
+//		// moving at an increased speed in that direction for the duration of the animation
+//	}
+//	else
+//	{
+//		// at the end of the animation, set the state back to walking
+//		player_state = states.walking;
+//		//player_dodging = false;
+//	}
+//}
 
 if(obj_player.experience >= obj_player.next_level)
 {
 	script_execute(scr_levelup());
+	//instance_create_layer(obj_player.x,obj_player.y,"Instances",obj_levelup);
 	obj_player.next_level = script_execute(scr_calculate_exp, obj_player.level);
 }
 

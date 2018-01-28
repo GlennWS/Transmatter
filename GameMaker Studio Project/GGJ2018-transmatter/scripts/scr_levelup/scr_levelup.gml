@@ -1,5 +1,6 @@
 with(obj_player)
-{		
+{	
+	audio_play_sound(snd_levelup, 10, false);
 	level += 1;
 	experience = 0;
 

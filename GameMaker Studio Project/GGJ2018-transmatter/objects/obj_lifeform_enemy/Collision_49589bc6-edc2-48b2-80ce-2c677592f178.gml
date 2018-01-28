@@ -2,6 +2,8 @@
 // You can write your code in this editor
 with(obj_player)
 {
+	if(player_dodging == 1) return;
+
 	if(!obj_player.iframed)
 	{
 		obj_player.hp -= 1;
