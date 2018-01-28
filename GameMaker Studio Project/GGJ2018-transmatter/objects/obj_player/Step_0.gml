@@ -1,16 +1,161 @@
 /// Basic Player Movement
 
+var moved = false;
+
 event_inherited();
 
-get_input(0,0.3);
+#region
 
-script_execute(states_array[player_state]);
+if(keyboard_check(vk_escape))
+{
+	game_end();
+}
 
-show_debug_message(player_state);
+// Move up
+if((keyboard_check(vk_up)) || (keyboard_check(ord("W"))))
+{
+	// Update the movement flag for this frame - remember to clear it after the movement script
+	obj_player.moved_up = 1;
+	obj_player.player_state = states.walking;
+	
+	// Update the player direction as the most recent, in executed order
+	obj_player.player_direction = directions.up;
+}
 
-image_alpha = 1.0;
+// Move left
+if((keyboard_check(vk_left)) || (keyboard_check(ord("A"))))
+{
+	// Update the movement flag for this frame - remember to clear it after the movement script
+	obj_player.moved_left = 1;
+	obj_player.player_state = states.walking;
+	
+	// Update the player direction as the most recent, in executed order
+	obj_player.player_direction = directions.left;
+}
 
-collision_check();
+// Move down
+if((keyboard_check(vk_down)) || (keyboard_check(ord("S"))))
+{
+	// Update the movement flag for this frame - remember to clear it after the movement script
+	obj_player.moved_down = 1;
+	obj_player.player_state = states.walking;
+		
+	// Update the player direction as the most recent, in executed order
+	obj_player.player_direction = directions.down;
+}
+
+// Move right
+if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
+{
+	// Update the movement flag for this frame - remember to clear it after the movement script
+	obj_player.moved_right = 1;
+	obj_player.player_state = states.walking;
+	
+	// Update the player direction as the most recent, in executed order
+	obj_player.player_direction = directions.right;
+}
+
+if(keyboard_check_pressed(vk_space))
+{
+	show_debug_message("Should switch to attack.");
+	player_state = states.attacking;
+	obj_player.sprite_index = spr_array_attacking[player_direction];
+	obj_player.image_speed = 1;
+}
+
+#endregion
+
+//hspd = xx * player_speed;
+//vspd = yy * player_speed;
+
+if(player_state = states.walking)
+{
+	if(moved_up == 1)
+	{
+		temp_pos_y -= player_speed;
+		sprite_index = spr_array_walking[directions.up];
+		player_direction = directions.up;
+		image_speed = player_speed / 3;
+		
+		moved = true;
+	}
+	
+	if(moved_left == 1)
+	{
+		temp_pos_x -= player_speed;
+		sprite_index = spr_array_walking[directions.left];
+		player_direction = directions.left;
+		image_speed = player_speed / 3;
+	
+		moved = true;
+	}
+	
+	if(moved_down == 1)
+	{
+		temp_pos_y += player_speed;
+		sprite_index = spr_array_walking[directions.down];
+		player_direction = directions.down;
+		image_speed = player_speed / 3;
+	
+		moved = true;
+	}
+	
+	if(moved_right == 1)
+	{
+		temp_pos_x += player_speed;
+		sprite_index = spr_array_walking[directions.right];
+		player_direction = directions.right;
+		image_speed = player_speed / 3;
+		
+		moved = true;
+	}
+	
+	if(!moved)
+	{
+		// switch to idle state
+		script_execute(states_array[states.idle]);
+	}
+	
+	moved_up = 0;
+	moved_down = 0;
+	moved_left = 0;
+	moved_right = 0;
+	
+	phy_position_x = temp_pos_x;
+	phy_position_y = temp_pos_y;
+}
+else if(player_state = states.attacking)
+{	
+	if(image_index >= 5 && image_index < 9)
+	{
+		show_debug_message("fire, fire fire");
+		show_debug_message("fire, fire fire");
+		with(instance_create_layer(x,y,debug_start.Instances, obj_player.obj_array_attacking[player_direction]))
+		{
+			//image_xscale = other.image_xscale;
+			with(instance_place(x,y,self))
+			{
+				if(obj_player.attack == 0)
+				{
+					obj_player.attack = 1;
+				}
+			}
+		}
+	}
+	show_debug_message(image_index);
+	if(image_index >= 8)
+	{
+		image_speed = 0.0;
+		obj_player.player_state = states.walking;
+		obj_player.sprite_index = spr_array_walking[player_direction];
+		image_index = 0;
+		player_attacking = false;
+	}
+}
+
+
+
+	image_alpha = 1.0;
 
 //// Obtain gamepad counter
 //var moved = false;

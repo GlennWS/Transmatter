@@ -6,7 +6,7 @@ enum states
 
 enum directions
 {
-	down, left, right, up
+	down = 0, left = 1, right = 2, up = 3
 }
 
 spr_array_walking[directions.down]	= spr_Sarah_walk_down;
@@ -14,15 +14,20 @@ spr_array_walking[directions.up]	= spr_Sarah_walk_up;
 spr_array_walking[directions.left]	= spr_Sarah_walk_left;
 spr_array_walking[directions.right] = spr_Sarah_walk_right;
 
-spr_array_attacking[directions.down]	= spr_swing_down;
-spr_array_attacking[directions.up]		= spr_swing_up;
-spr_array_attacking[directions.left]	= spr_swing_left;
-spr_array_attacking[directions.right]	= spr_swing_right;
+spr_array_attacking[0]	= spr_swing_down;
+spr_array_attacking[1]	= spr_swing_left;
+spr_array_attacking[2]	= spr_swing_right;
+spr_array_attacking[3]	= spr_swing_up;
 
 states_array[states.idle]		= scr_player_idle;
 states_array[states.walking]	= scr_player_walking;
 states_array[states.dodging]	= scr_player_dodging;
 states_array[states.attacking]	= scr_player_attacking;
+
+obj_array_attacking[0]	= obj_hit_down;
+obj_array_attacking[1]	= obj_hit_left;
+obj_array_attacking[2]	= obj_hit_right;
+obj_array_attacking[3]	= obj_hit_up;
 
 event_inherited();
 image_speed = 0;
@@ -35,12 +40,14 @@ var face_index = 2; // DOWN
 // 2 -> down
 // 3 -> right
 
-player_state = states.idle;
+player_state = states.walking;
 player_direction = directions.down;
 player_speed = 3.5;
 
 temp_pos_x = phy_position_x;
 temp_pos_y = phy_position_y;
+
+player_attacking = false;
 
 horiz_speed = 0;
 vert_speed = 0;
@@ -56,15 +63,3 @@ moved_left = 0;
 moved_right = 0;
 
 maxpads = gamepad_get_device_count();
-
-
-
-// move to step code once the walking state is implemented
-
-if(obj_player.player_state == states.walking)
-{
-	if(player_direction == directions.down)
-	{
-		sprite_index = spr_array_walking[directions.down];
-	}	
-}
