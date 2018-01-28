@@ -1,5 +1,5 @@
 {
-    "id": "34d1bb36-3b15-40b9-8a5d-632b5f3f1eb2",
+    "id": "022741fa-2e92-47ca-89d5-e05901bbb2df",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_shopkeeper_two",
@@ -20,39 +20,10 @@
     "physicsRestitution": 0.1,
     "physicsSensor": false,
     "physicsShape": 1,
-    "physicsShapePoints": [
-        {
-            "id": "93fd029a-04bd-4524-8df9-7a8bfe57ca93",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 0,
-            "y": 0
-        },
-        {
-            "id": "7d7f4f2c-83b5-41e7-925a-51282fd22104",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 27,
-            "y": 0
-        },
-        {
-            "id": "198d1c40-9642-4091-b6f0-4a5590c227cb",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 27,
-            "y": 32
-        },
-        {
-            "id": "a3b1caf9-cba3-4374-87b8-3f0eb7fd4d83",
-            "modelName": "GMPoint",
-            "mvc": "1.0",
-            "x": 0,
-            "y": 32
-        }
-    ],
+    "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": false,
-    "spriteId": "9d237f2e-e490-4916-bede-0effe306acd5",
+    "solid": true,
+    "spriteId": "b39c895a-e73b-4752-8aaa-5a17e586fb16",
     "visible": true
 }
