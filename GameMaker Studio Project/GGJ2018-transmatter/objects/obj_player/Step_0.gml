@@ -170,7 +170,17 @@ if(keyboard_check_pressed(vk_space))
 	if(check != noone)
 	{
 		obj_textbox.text = check.myText;
+		var loot = check.loot;
 		
+		if(loot != noone)
+		{
+			if(!check.activity)
+			{
+				instance_create_layer(check.x+10, check.y+35,"Instances",loot);
+				loot.depth = -y;
+				check.activity = true;
+			}
+		}
 		obj_chest_gold.image_speed = 1;
 	}
 	else

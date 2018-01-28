@@ -4,3 +4,5 @@ myText = "Got 5G!";
 loot = obj_gold;
 image_speed = 0;
 image_index = 0;
+activity = false;
+me_once = false;
