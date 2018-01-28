@@ -1,49 +1,49 @@
 {
-    "id": "34d1bb36-3b15-40b9-8a5d-632b5f3f1eb2",
+    "id": "c48c8999-c892-43c2-8ee1-92de6e2295b0",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_shopkeeper_two",
+    "name": "obj_hub_wall",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "3a3268f1-d60c-420f-bd74-d16ec071d342",
     "persistent": false,
     "physicsAngularDamping": 0.1,
-    "physicsDensity": 0.5,
+    "physicsDensity": 0,
     "physicsFriction": 0.2,
     "physicsGroup": 0,
     "physicsKinematic": false,
     "physicsLinearDamping": 0.1,
-    "physicsObject": false,
+    "physicsObject": true,
     "physicsRestitution": 0.1,
     "physicsSensor": false,
     "physicsShape": 1,
     "physicsShapePoints": [
         {
-            "id": "93fd029a-04bd-4524-8df9-7a8bfe57ca93",
+            "id": "d04aedff-4abe-4f90-8355-f8cdfd9f68ec",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
             "y": 0
         },
         {
-            "id": "7d7f4f2c-83b5-41e7-925a-51282fd22104",
+            "id": "95a0baeb-a89f-4acb-9422-53cc04e482ee",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": 27,
+            "x": 32,
             "y": 0
         },
         {
-            "id": "198d1c40-9642-4091-b6f0-4a5590c227cb",
+            "id": "a8fa2994-6fc9-4681-ad0e-3e870d5b100f",
             "modelName": "GMPoint",
             "mvc": "1.0",
-            "x": 27,
+            "x": 32,
             "y": 32
         },
         {
-            "id": "a3b1caf9-cba3-4374-87b8-3f0eb7fd4d83",
+            "id": "37feb1b1-c65b-4a9c-b14d-0389a06f85bc",
             "modelName": "GMPoint",
             "mvc": "1.0",
             "x": 0,
@@ -52,7 +52,7 @@
     ],
     "physicsStartAwake": true,
     "properties": null,
-    "solid": false,
-    "spriteId": "9d237f2e-e490-4916-bede-0effe306acd5",
+    "solid": true,
+    "spriteId": "49d01665-b796-4912-9a5a-e0310e9e82cb",
     "visible": true
 }
