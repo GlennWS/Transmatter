@@ -62,6 +62,7 @@ player_dodging = false;
 attack_active = false;
 moveable = true;
 iframed = false;
+paused = false;
 
 horiz_speed = 0;
 vert_speed = 0;

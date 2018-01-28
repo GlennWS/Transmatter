@@ -1,6 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-alpha = obj_player.heal_cooldown / 500;
-//show_debug_message(alpha);
-
-
+scr_initialize_inventory(2,1, 436, 8);
+//382,12,418,48

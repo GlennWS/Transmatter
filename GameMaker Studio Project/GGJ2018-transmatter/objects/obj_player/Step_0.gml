@@ -77,9 +77,18 @@ event_inherited();
 
 
 
-if(keyboard_check(vk_escape))
+if(keyboard_check_pressed(vk_escape))
 {
-	game_end();
+	if(!obj_player.paused)
+	{
+		obj_player.paused = true;
+		instance_deactivate_all(true);
+	}
+	else
+	{
+		obj_player.paused = false;
+		instance_activate_all();
+	}
 }
 
 // Move up
