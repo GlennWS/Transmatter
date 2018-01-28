@@ -36,6 +36,7 @@
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
@@ -48,8 +49,38 @@
     "physicsRestitution": 0.1,
     "physicsSensor": false,
     "physicsShape": 1,
-    "physicsShapePoints": null,
+    "physicsShapePoints": [
+        {
+            "id": "f32d11e9-1863-4e1d-b805-0ca676d96602",
+            "modelName": "GMPoint",
+            "mvc": "1.0",
+            "x": 35,
+            "y": 4
+        },
+        {
+            "id": "692cc4b5-58f0-40bf-817f-d20f4be259ab",
+            "modelName": "GMPoint",
+            "mvc": "1.0",
+            "x": 48,
+            "y": 4
+        },
+        {
+            "id": "0d999c44-ef6a-480e-b4d3-37623aad541d",
+            "modelName": "GMPoint",
+            "mvc": "1.0",
+            "x": 48,
+            "y": 45
+        },
+        {
+            "id": "dc49b1cf-e511-4dbf-9b73-6f707aba619f",
+            "modelName": "GMPoint",
+            "mvc": "1.0",
+            "x": 35,
+            "y": 45
+        }
+    ],
     "physicsStartAwake": true,
+    "properties": null,
     "solid": false,
     "spriteId": "20d8ba9c-a977-44f5-9f62-5fe683b379ed",
     "visible": true
