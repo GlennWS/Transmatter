@@ -10,7 +10,12 @@
         "2823d84a-e9d4-4137-907b-a69b4ea3e9a9",
         "5e1b565b-5cf8-4ed7-b399-5ee51db8896e",
         "b09776bf-a9fe-4d58-8dd1-86cdc179f386",
-        "09198208-3f7e-4ab2-be61-678c310aa489"
+        "09198208-3f7e-4ab2-be61-678c310aa489",
+        "66010e66-7bf1-4c0c-853d-1ef5f4d279c3",
+        "e6224bc7-e64e-49f2-ac5d-90ea73e69149",
+        "ba862270-d318-4120-94fa-90c48d4ac930",
+        "bbea6a99-810e-4263-acd6-12aedbea951a",
+        "66318da5-cc7d-42ad-b8a9-dc220b8082f5"
     ],
     "filterType": "GMSprite",
     "folderName": "Items",
