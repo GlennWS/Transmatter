@@ -19,7 +19,9 @@
         "fe23a08c-4a39-4eea-bb5f-e542ed52c887",
         "548ad9c6-1319-4eb9-b5fc-bf81f4491147",
         "2bd6be5a-c689-4ebf-850e-76b53730d0e8",
-        "49d01665-b796-4912-9a5a-e0310e9e82cb"
+        "49d01665-b796-4912-9a5a-e0310e9e82cb",
+        "3bb227c3-9e04-4717-859d-e1ffab93e05f",
+        "77c8e8ff-a9f5-48d6-8583-544c08c9c3f9"
     ],
     "filterType": "GMSprite",
     "folderName": "Terrain",

@@ -343,6 +343,14 @@
             }
         },
         {
+            "Key": "3bb227c3-9e04-4717-859d-e1ffab93e05f",
+            "Value": {
+                "id": "2e48d0ab-56d3-4692-a6ae-17b931aabf0c",
+                "resourcePath": "sprites\\spr_hub_floor\\spr_hub_floor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3e03c250-aebc-4b19-ab35-d142603b0720",
             "Value": {
                 "id": "8aa7a877-9314-42d4-9ec4-b224aa80d6c4",
@@ -631,6 +639,14 @@
             }
         },
         {
+            "Key": "77c8e8ff-a9f5-48d6-8583-544c08c9c3f9",
+            "Value": {
+                "id": "3f1ee116-c3f1-4f22-856f-9966ede953f2",
+                "resourcePath": "sprites\\spr_shopfront\\spr_shopfront.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "79c87b8d-893f-4268-b811-250d7b47aaea",
             "Value": {
                 "id": "86a0c549-6137-487f-a069-d255ebddd84b",
@@ -699,6 +715,14 @@
             "Value": {
                 "id": "50e66171-39e3-4248-92a9-861b0096d147",
                 "resourcePath": "sprites\\spr_left\\spr_left.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "86fadc67-a583-460a-95ac-56555ce14986",
+            "Value": {
+                "id": "cb35a3d5-0adc-4244-8c26-6678eab8ac82",
+                "resourcePath": "sprites\\spr_shopkeeper_one\\spr_shopkeeper_one.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -932,6 +956,14 @@
                 "id": "d1755f83-88ae-48a5-913c-6c18f5a0c3a2",
                 "resourcePath": "views\\b25d50bc-a870-4f28-8897-0bc87a8a9ef8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b39c895a-e73b-4752-8aaa-5a17e586fb16",
+            "Value": {
+                "id": "a487311e-1044-47fe-9866-76a78e99070a",
+                "resourcePath": "sprites\\spr_shopkeeper_two\\spr_shopkeeper_two.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
