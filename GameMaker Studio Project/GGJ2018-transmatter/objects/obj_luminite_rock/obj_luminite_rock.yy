@@ -1,19 +1,10 @@
 {
-    "id": "0fad6f75-9f97-42ef-b57d-18a6dd63e6ea",
+    "id": "fc97958e-ae2e-4caf-b0b7-8edc2cfdbe8a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_hit_up",
+    "name": "obj_luminite_rock",
     "eventList": [
-        {
-            "id": "4346b747-4116-44e0-b952-fcae956d1fe5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 77,
-            "eventtype": 8,
-            "m_owner": "0fad6f75-9f97-42ef-b57d-18a6dd63e6ea"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "parentObjectId": "00000000-0000-0000-0000-000000000000",
@@ -30,7 +21,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "solid": false,
-    "spriteId": "3e03c250-aebc-4b19-ab35-d142603b0720",
-    "visible": false
+    "solid": true,
+    "spriteId": "496b140e-2a98-46e7-9b4d-dc630edd1e79",
+    "visible": true
 }
