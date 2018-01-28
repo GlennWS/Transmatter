@@ -1,5 +1,5 @@
 {
-    "id": "de2c4dfb-a8cb-419c-b64d-eac54f514620",
+    "id": "06d19f20-b29f-44a0-bde8-04041e8fcade",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_hub_floor",

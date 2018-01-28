@@ -1,5 +1,5 @@
 {
-    "id": "0e92741f-ef64-4d7d-aa34-d43dc4505548",
+    "id": "b27b4075-544d-4ff5-93af-d1f24c79a9c2",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "obj_shopkeeper",
@@ -23,7 +23,7 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": null,
-    "solid": true,
+    "solid": false,
     "spriteId": "86fadc67-a583-460a-95ac-56555ce14986",
     "visible": true
 }
