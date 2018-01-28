@@ -6,7 +6,7 @@ with(obj_player)
 
 	if(!obj_player.iframed)
 	{
-		obj_player.hp -= 1;
+		obj_player.hp -= obj_enemy_slime.slime_damage;
 		obj_player.iframed = true;
 		obj_player.alarm[1] = 60;
 		show_debug_message("player hp is----");

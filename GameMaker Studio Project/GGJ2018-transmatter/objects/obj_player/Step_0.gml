@@ -187,7 +187,7 @@ if(keyboard_check_pressed(vk_space))
 	{
 		//show_debug_message("Should switch to attack.");
 		player_state = states.attacking;
-		obj_player.sprite_index = spr_array_attacking[player_direction];
+		obj_player.sprite_index = global.spr_array_attacking[player_direction];
 		if(!aud_lim_sword)
 		{
 			audio_play_sound(snd_sword, 10, false);
@@ -225,7 +225,7 @@ if(player_state = states.walking)
 	if(moved_up == 1)
 	{
 		temp_pos_y -= player_speed;
-		sprite_index = spr_array_walking[directions.up];
+		sprite_index = global.spr_array_walking[directions.up];
 		player_direction = directions.up;
 		image_speed = player_speed / 3;
 		
@@ -235,7 +235,7 @@ if(player_state = states.walking)
 	if(moved_left == 1)
 	{
 		temp_pos_x -= player_speed;
-		sprite_index = spr_array_walking[directions.left];
+		sprite_index = global.spr_array_walking[directions.left];
 		player_direction = directions.left;
 		image_speed = player_speed / 3;
 	
@@ -245,7 +245,7 @@ if(player_state = states.walking)
 	if(moved_down == 1)
 	{
 		temp_pos_y += player_speed;
-		sprite_index = spr_array_walking[directions.down];
+		sprite_index = global.spr_array_walking[directions.down];
 		player_direction = directions.down;
 		image_speed = player_speed / 3;
 	
@@ -255,7 +255,7 @@ if(player_state = states.walking)
 	if(moved_right == 1)
 	{
 		temp_pos_x += player_speed;
-		sprite_index = spr_array_walking[directions.right];
+		sprite_index = global.spr_array_walking[directions.right];
 		player_direction = directions.right;
 		image_speed = player_speed / 3;
 		
@@ -265,7 +265,7 @@ if(player_state = states.walking)
 	if(!moved)
 	{
 		// switch to idle state
-		script_execute(states_array[states.idle]);
+		script_execute(global.states_array[states.idle]);
 	}
 	
 	// If Shift is being pressed this frame, run
@@ -348,7 +348,7 @@ else if(player_state = states.attacking)
 					break;
 			}
 			
-			with(instance_create_layer(xplace,yplace,"Hitbox",obj_array_attacking[player_direction]))
+			with(instance_create_layer(xplace,yplace,"Hitbox",global.obj_array_attacking[player_direction]))
 			{
 				with(instance_place(xplace,yplace,obj_lifeform_enemy))
 				{
@@ -375,7 +375,7 @@ else if(player_state = states.attacking)
 	{
 		image_speed = 0.0;
 		obj_player.player_state = states.walking;
-		obj_player.sprite_index = spr_array_walking[player_direction];
+		obj_player.sprite_index = global.spr_array_walking[player_direction];
 		image_index = 0;
 		player_attacking = false;
 	}

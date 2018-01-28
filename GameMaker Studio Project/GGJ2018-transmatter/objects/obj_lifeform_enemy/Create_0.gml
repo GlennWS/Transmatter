@@ -1,3 +1,14 @@
-/// @description Insert description here
-// You can write your code in this editor
-event_inherited();
+slime_level = 1 * global.level_depth;
+maxhp = 3;
+maxhp += + ceil(slime_level*0.5);
+slime_damage = slime_level * ceil(1.5);
+hp = maxhp;
+image_speed = 0.1;
+spd = 0.50;
+state = scr_enemy_idle_state;
+alarm[0] = room_speed * irandom_range(2, 5);
+sight = 64;
+targetx = 0;
+targety = 0;
+difficulty = 0;
+experience_worth = slime_level * (difficulty + 1);
