@@ -130,17 +130,17 @@ else if(player_state = states.attacking)
 	{
 		show_debug_message("fire, fire fire");
 		show_debug_message("fire, fire fire");
-		with(instance_create_layer(x,y,debug_start.Instances, obj_player.obj_array_attacking[player_direction]))
-		{
-			//image_xscale = other.image_xscale;
-			with(instance_place(x,y,self))
-			{
-				if(obj_player.attack == 0)
-				{
-					obj_player.attack = 1;
-				}
-			}
-		}
+		//with(instance_create_layer(x,y,debug_start.Instances, obj_player.obj_array_attacking[player_direction]))
+		//{
+		//	//image_xscale = other.image_xscale;
+		//	with(instance_place(x,y,self))
+		//	{
+		//		if(obj_player.attack == 0)
+		//		{
+		//			obj_player.attack = 1;
+		//		}
+		//	}
+		//}
 	}
 	show_debug_message(image_index);
 	if(image_index >= 8)
