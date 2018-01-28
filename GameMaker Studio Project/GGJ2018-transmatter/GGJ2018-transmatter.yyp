@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "09198208-3f7e-4ab2-be61-678c310aa489",
+            "Value": {
+                "id": "c07bb135-7eb5-47aa-9e56-6ab1e477162d",
+                "resourcePath": "sprites\\spr_potion\\spr_potion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e5c108a-85f8-4b38-b303-721baf547d9c",
             "Value": {
                 "id": "1571fdb7-0cd5-4388-8842-0164c47d705d",
@@ -107,6 +115,14 @@
             "Value": {
                 "id": "712d99a1-5d95-46af-857c-d3ef8093d3f4",
                 "resourcePath": "sprites\\spr_scrap_metal\\spr_scrap_metal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "13255d96-63b8-4494-ac52-13a8370c745e",
+            "Value": {
+                "id": "221ccb47-80a2-4aac-9caa-1c497c95a0f7",
+                "resourcePath": "sprites\\spr_pillar\\spr_pillar.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -311,6 +327,14 @@
             }
         },
         {
+            "Key": "4e4874f8-f059-4fc7-b4c7-91ec7528d95b",
+            "Value": {
+                "id": "80ac5716-6436-4c01-8c30-ca3208fe7d72",
+                "resourcePath": "objects\\obj_small_rocks\\obj_small_rocks.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "50243a81-a135-49d0-82db-b84d4d49d0e8",
             "Value": {
                 "id": "e081ed25-c8a2-46a2-99ee-05df64ed1036",
@@ -340,6 +364,30 @@
                 "id": "c3df7193-ca7a-40c1-8170-7423b95d8cce",
                 "resourcePath": "sprites\\spr_back\\spr_back.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5e1b565b-5cf8-4ed7-b399-5ee51db8896e",
+            "Value": {
+                "id": "22e734b7-8d56-4c7f-96cf-c2a2659eb68d",
+                "resourcePath": "sprites\\spr_armour\\spr_armour.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "606eeff0-0ff9-47f7-9f6b-d6e0eb8f2739",
+            "Value": {
+                "id": "92b6a0c4-1d44-40a4-b2a4-56cbfd998b82",
+                "resourcePath": "objects\\obj_stalagmite\\obj_stalagmite.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "60cd6d86-6a0f-4e00-937a-c5ac8a4854e5",
+            "Value": {
+                "id": "0a630ca1-71b6-4dca-a105-7c83e2172311",
+                "resourcePath": "views\\60cd6d86-6a0f-4e00-937a-c5ac8a4854e5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -447,6 +495,14 @@
             }
         },
         {
+            "Key": "71c5e5e5-cb0a-4802-9f96-eda711eef1bc",
+            "Value": {
+                "id": "42ea9ea9-2c3a-43cf-9af0-e1c9b0644ba1",
+                "resourcePath": "sprites\\spr_water_rock\\spr_water_rock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "72747e60-331e-4cf3-b875-5f077ca7e380",
             "Value": {
                 "id": "a781dd9f-fab9-4102-8074-639594054aff",
@@ -535,6 +591,14 @@
             }
         },
         {
+            "Key": "7f5f83d4-816f-453a-830a-15eee7b8b7e2",
+            "Value": {
+                "id": "d87a633a-39b2-4d32-a2eb-e6af4a7f610c",
+                "resourcePath": "sprites\\spr_cave_entrance\\spr_cave_entrance.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "802f2bc7-60e8-4f2d-8917-86f0ace4cf5a",
             "Value": {
                 "id": "3ed8f332-43ea-4074-9eb6-0c169f89c3b5",
@@ -588,6 +652,14 @@
                 "id": "2a6412eb-e273-495b-88e6-f8b32b772a43",
                 "resourcePath": "sprites\\spr_scrap_chest\\spr_scrap_chest.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8c3f0bc3-9a57-418c-803d-021bd8bac70e",
+            "Value": {
+                "id": "38f75172-70ba-4b19-b553-31992f9ae7ae",
+                "resourcePath": "objects\\obj_water_rock\\obj_water_rock.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -679,6 +751,14 @@
             }
         },
         {
+            "Key": "a05a2dff-d86b-41c3-91d7-10ce99bdaa27",
+            "Value": {
+                "id": "771421ae-aa18-431d-a216-d1fa27df7eb1",
+                "resourcePath": "objects\\obj_pillar\\obj_pillar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a6d1d451-f060-4658-9d3e-b2a81112af9c",
             "Value": {
                 "id": "045c007f-63c1-4b22-86c4-d3587c354cb7",
@@ -691,6 +771,22 @@
             "Value": {
                 "id": "ca3976d3-5aa1-4fa0-9e2f-164d1d0ac034",
                 "resourcePath": "sprites\\spr_Sarah_dodge_roll_right\\spr_Sarah_dodge_roll_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b09776bf-a9fe-4d58-8dd1-86cdc179f386",
+            "Value": {
+                "id": "f5793a90-f1ab-46d6-a625-e5a781a2d473",
+                "resourcePath": "sprites\\spr_helmet\\spr_helmet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0c5c8f6-b54a-4ef5-b58c-83ebbef57bff",
+            "Value": {
+                "id": "35b4b729-4142-47cd-a361-c2a1bf8fc376",
+                "resourcePath": "sprites\\spr_stalagmite\\spr_stalagmite.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -895,6 +991,14 @@
             }
         },
         {
+            "Key": "e8b9fdbd-be2c-41c6-81db-83c3da0619ae",
+            "Value": {
+                "id": "1d22b5ed-e588-428b-aabf-eb89d7d8da7d",
+                "resourcePath": "objects\\obj_cave_entrance\\obj_cave_entrance.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e91cd611-f82b-4ffa-b47c-ca5cfff7fa06",
             "Value": {
                 "id": "8efc8f11-6a21-44e4-9e41-d17224f78d8d",
@@ -915,6 +1019,14 @@
             "Value": {
                 "id": "8824945b-76e5-4850-8273-37c8b33dc32f",
                 "resourcePath": "sprites\\sprite11\\sprite11.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f0c4d349-1bcb-477e-9c69-0dd1e6d1013a",
+            "Value": {
+                "id": "1f9295fa-d0d1-4618-8b94-4660b671d0e9",
+                "resourcePath": "sprites\\spr_small_rocks\\spr_small_rocks.yy",
                 "resourceType": "GMSprite"
             }
         },
