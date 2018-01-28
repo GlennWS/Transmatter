@@ -48,6 +48,7 @@ temp_pos_x = phy_position_x;
 temp_pos_y = phy_position_y;
 
 player_attacking = false;
+moveable = true;
 
 horiz_speed = 0;
 vert_speed = 0;

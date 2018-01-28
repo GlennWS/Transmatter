@@ -1,22 +1,22 @@
 {
-    "id": "d98e900b-9514-4499-a4e7-a115773787d5",
+    "id": "39600761-26f9-47cf-9c74-208229e35e44",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_hitbox",
+    "name": "obj_lifeform_enemy",
     "eventList": [
         {
-            "id": "3de0a3dd-da37-4b68-b2b8-9a5a02ddd8b7",
+            "id": "97f60df3-5ca6-4d8c-a2ba-cc0752dacc43",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 77,
-            "eventtype": 8,
-            "m_owner": "d98e900b-9514-4499-a4e7-a115773787d5"
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "39600761-26f9-47cf-9c74-208229e35e44"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "70c81e18-d8e2-436b-8966-af336700c9e8",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

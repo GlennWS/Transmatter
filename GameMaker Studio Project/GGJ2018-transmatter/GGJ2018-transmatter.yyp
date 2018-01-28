@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "39600761-26f9-47cf-9c74-208229e35e44",
+            "Value": {
+                "id": "72e0436b-8d58-4a3a-b831-129c74e8fba0",
+                "resourcePath": "objects\\obj_lifeform_enemy\\obj_lifeform_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3a3268f1-d60c-420f-bd74-d16ec071d342",
             "Value": {
                 "id": "8beeeabe-fd37-41fc-b343-5dd235ab52f1",
@@ -924,14 +932,6 @@
                 "id": "e3f88087-6cbb-46a7-8ee2-800a58b6391b",
                 "resourcePath": "scripts\\scr_player_idle\\scr_player_idle.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d98e900b-9514-4499-a4e7-a115773787d5",
-            "Value": {
-                "id": "a5392f11-d306-4390-980c-2360cf4186d7",
-                "resourcePath": "objects\\obj_hitbox\\obj_hitbox.yy",
-                "resourceType": "GMObject"
             }
         },
         {

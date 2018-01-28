@@ -57,7 +57,7 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 
 if(keyboard_check_pressed(vk_space))
 {
-	show_debug_message("Should switch to attack.");
+	//show_debug_message("Should switch to attack.");
 	player_state = states.attacking;
 	obj_player.sprite_index = spr_array_attacking[player_direction];
 	obj_player.image_speed = 1;
@@ -70,6 +70,7 @@ if(keyboard_check_pressed(vk_space))
 
 if(player_state = states.walking)
 {
+
 	if(moved_up == 1)
 	{
 		temp_pos_y -= player_speed;
@@ -116,6 +117,26 @@ if(player_state = states.walking)
 		script_execute(states_array[states.idle]);
 	}
 	
+	// If Shift is being pressed this frame, run
+	if(keyboard_check(vk_shift))
+	{
+		player_speed = 4.5;
+		var dash = instance_create_depth(x, y, -1, obj_dash_effect);
+		dash.sprite_index = sprite_index;
+		dash.image_index = image_index;
+	}
+	else
+	{
+		player_speed = 3.5;
+	}
+	
+	if(keyboard_check(vk_nokey))
+	{
+		image_index = 0;
+		image_speed = 0;
+	}
+	
+	
 	moved_up = 0;
 	moved_down = 0;
 	moved_left = 0;
@@ -128,14 +149,18 @@ else if(player_state = states.attacking)
 {	
 	if(image_index >= 5 && image_index < 9)
 	{
-		show_debug_message("fire, fire fire");
-		show_debug_message("fire, fire fire");
+		//show_debug_message("fire, fire fire");
+		//show_debug_message("fire, fire fire");
 		with(instance_create_layer(x,y,"Hitbox",obj_array_attacking[player_direction]))
 		{
-		
+			with(instance_place(x,y,obj_lifeform_enemy))
+			{
+				show_debug_message("Enemy hit");
+				//show_debug_message(other.hp);
+			}
 		}
 	}
-	show_debug_message(image_index);
+	//show_debug_message(image_index);
 	if(image_index >= 8)
 	{
 		image_speed = 0.0;
@@ -283,14 +308,7 @@ else if(player_state = states.attacking)
 //	}
 //}
 //
-//// If Shift is being pressed this frame, run
-//if(keyboard_check(vk_shift))
-//{
-//	player_speed = 7;
-//	var dash = instance_create_depth(x, y, -1, obj_dash_effect);
-//	dash.sprite_index = sprite_index;
-//	dash.image_index = image_index;
-//}
+
 //
 //if(!keyboard_check(vk_shift))
 //{
