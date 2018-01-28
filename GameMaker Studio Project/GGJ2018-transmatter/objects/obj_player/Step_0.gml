@@ -2,6 +2,12 @@
 
 var moved = false;
 
+//alarm -= 1;
+
+//show_debug_message(alarm[1]);
+
+if(hp <= 0) game_restart();
+
 event_inherited();
 
 #region
@@ -60,7 +66,9 @@ if(keyboard_check_pressed(vk_space))
 	//show_debug_message("Should switch to attack.");
 	player_state = states.attacking;
 	obj_player.sprite_index = spr_array_attacking[player_direction];
+	audio_play_sound(snd_sword, 10, false);
 	obj_player.image_speed = 1;
+	obj_player.alarm[3] = 15;
 }
 
 #endregion
@@ -70,7 +78,6 @@ if(keyboard_check_pressed(vk_space))
 
 if(player_state = states.walking)
 {
-
 	if(moved_up == 1)
 	{
 		temp_pos_y -= player_speed;
@@ -149,21 +156,57 @@ else if(player_state = states.attacking)
 {	
 	if(image_index >= 5 && image_index < 9)
 	{
-		//show_debug_message("fire, fire fire");
-		//show_debug_message("fire, fire fire");
-		with(instance_create_layer(x,y,"Hitbox",obj_array_attacking[player_direction]))
+		if(!attack_active)
 		{
-			with(instance_place(x,y,obj_lifeform_enemy))
+			attack_active = true;
+			
+			var xplace = 0;
+			var yplace = 0;
+			//show_debug_message("fire, fire fire");
+			//show_debug_message("fire, fire fire");
+			switch(player_direction)
 			{
-				show_debug_message("Enemy hit");
-				with (obj_lifeform_enemy) {
-					other.hp -= 1;
-					
-					if (other.hp <= 0) {
-						instance_destroy();
+				case directions.up:
+					xplace = x;
+					yplace = y - 18;
+					break;
+				
+				case directions.down:
+					xplace = x;
+					yplace = y + 18;
+					break;
+				
+				case directions.right:
+					xplace = x + 18;
+					yplace = y;
+					break;
+				
+				case directions.left:
+					xplace = x - 18;
+					yplace = y;
+					break;
+			}
+			
+			with(instance_create_layer(xplace,yplace,"Hitbox",obj_array_attacking[player_direction]))
+			{
+				with(instance_place(xplace,yplace,obj_lifeform_enemy))
+				{
+					show_debug_message("Enemy hit");
+					with (other) 
+					{
+						other.hp -= 1;
+						
+						if (other.hp <= 0) 
+						{
+							instance_destroy();
+						}
 					}
 				}
 			}
+		}
+		else
+		{
+			show_debug_message("attack is already active");
 		}
 	}
 	//show_debug_message(image_index);
@@ -177,7 +220,11 @@ else if(player_state = states.attacking)
 	}
 }
 
-
+if(obj_player.experience >= obj_player.next_level)
+{
+	script_execute(scr_levelup());
+	obj_player.next_level = script_execute(scr_calculate_exp, obj_player.level);
+}
 
 	image_alpha = 1.0;
 

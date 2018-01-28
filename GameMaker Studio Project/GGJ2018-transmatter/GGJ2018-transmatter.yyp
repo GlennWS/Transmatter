@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "3121938e-5cc2-4b3c-a0e1-a0e4e8efc822",
+            "Value": {
+                "id": "db0c25ff-f139-4f14-ad38-848107a70dc9",
+                "resourcePath": "scripts\\scr_calculate_exp\\scr_calculate_exp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "313c1535-f681-4bb4-a2a9-c384878558b2",
             "Value": {
                 "id": "73401f4a-e5df-49d7-91c0-652a058edfc5",
@@ -330,7 +338,7 @@
             "Key": "4b90cff4-12b8-4cdf-89fa-c65a9d93e411",
             "Value": {
                 "id": "d1537aef-ca32-48af-aa08-9c9d274f290d",
-                "resourcePath": "sounds\\sound0\\sound0.yy",
+                "resourcePath": "sounds\\snd_sword\\snd_sword.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -703,6 +711,14 @@
             }
         },
         {
+            "Key": "90a2e462-7a68-44db-a33e-b68218b6a618",
+            "Value": {
+                "id": "3731aa48-6857-4f4f-a793-2ac860d2de48",
+                "resourcePath": "scripts\\scr_levelup\\scr_levelup.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "917ca6b8-d574-431d-9c2e-869af0fd5e2f",
             "Value": {
                 "id": "ab4acef4-fe98-4397-8fe5-92ce932be445",
@@ -747,6 +763,14 @@
             "Value": {
                 "id": "771421ae-aa18-431d-a216-d1fa27df7eb1",
                 "resourcePath": "objects\\obj_pillar\\obj_pillar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a106cfa6-0c65-4854-a3b6-fed989e28aa1",
+            "Value": {
+                "id": "6c52e901-dfe0-4ddc-b6eb-90da300557a7",
+                "resourcePath": "objects\\obj_sub_stats_draw\\obj_sub_stats_draw.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -935,6 +959,14 @@
             }
         },
         {
+            "Key": "da7acf61-deb5-47a2-96fa-ed8ffc436668",
+            "Value": {
+                "id": "a4eeb020-7f65-484e-bc57-1f0f241ad5af",
+                "resourcePath": "views\\da7acf61-deb5-47a2-96fa-ed8ffc436668.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dac64fe6-e799-4800-bfb8-0521a40214d9",
             "Value": {
                 "id": "6ce52225-2558-444e-95b0-8a648a37d88f",
@@ -1100,7 +1132,9 @@
         "d72310a7-f8b3-4284-b09a-c0b7947d0969",
         "d8e9b2e0-d98d-4268-8d11-22de192bc442",
         "8efea639-45a4-4814-8d99-dca298a55204",
-        "2c650247-6c87-4073-884c-c3fe56a8f01c"
+        "2c650247-6c87-4073-884c-c3fe56a8f01c",
+        "3121938e-5cc2-4b3c-a0e1-a0e4e8efc822",
+        "90a2e462-7a68-44db-a33e-b68218b6a618"
     ],
     "tutorial": ""
 }

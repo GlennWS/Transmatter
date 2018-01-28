@@ -1,3 +1,3 @@
-// Hit alarm
+/// @description Hit alarm
 
 hit = false;

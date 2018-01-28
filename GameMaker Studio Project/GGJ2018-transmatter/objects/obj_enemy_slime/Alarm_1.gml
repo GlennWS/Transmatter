@@ -1,3 +1,3 @@
-/// Stall state alarm
+/// @description Stall state alarm
 
 

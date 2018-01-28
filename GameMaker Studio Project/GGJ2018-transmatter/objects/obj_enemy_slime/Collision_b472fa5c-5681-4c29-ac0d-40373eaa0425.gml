@@ -1,4 +1,5 @@
-/// Player damage
+/// @description Damage Player!
+event_inherited();
 
 if (state != scr_enemy_stall_state) {
 	var dir = point_direction(other.x, other.y, x, y);

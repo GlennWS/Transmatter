@@ -40,6 +40,8 @@ var face_index = 2; // DOWN
 // 2 -> down
 // 3 -> right
 
+
+
 player_state = states.walking;
 player_direction = directions.down;
 player_speed = 3.5;
@@ -48,7 +50,9 @@ temp_pos_x = phy_position_x;
 temp_pos_y = phy_position_y;
 
 player_attacking = false;
+attack_active = false;
 moveable = true;
+iframed = false;
 
 horiz_speed = 0;
 vert_speed = 0;
@@ -64,3 +68,27 @@ moved_left = 0;
 moved_right = 0;
 
 maxpads = gamepad_get_device_count();
+
+
+#region RPGMechanics
+
+level = 1;
+experience = 0;
+next_level = script_execute(scr_calculate_exp, level);
+
+strength = 1;
+weapon = 0;
+damage = strength + weapon;
+
+constitution = 1;
+armor = 0;
+defense = constitution + armor;
+
+maxstamina = 100;
+stamina = maxstamina;
+
+basehp = 7;
+maxhp = basehp + ceil(constitution / 2);
+hp = maxhp;
+
+#endregion
