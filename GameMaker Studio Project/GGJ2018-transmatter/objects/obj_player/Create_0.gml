@@ -63,6 +63,12 @@ attack_active = false;
 moveable = true;
 iframed = false;
 paused = false;
+skip = false;
+
+hspd = 0;
+vspd = 0;
+
+
 
 horiz_speed = 0;
 vert_speed = 0;
@@ -100,5 +106,8 @@ stamina = maxstamina;
 basehp = 7;
 maxhp = basehp + ceil(constitution / 2);
 hp = maxhp;
+
+player_gold = 0;
+player_luminite = 0;
 
 #endregion

@@ -138,17 +138,55 @@ if((keyboard_check(vk_right)) || (keyboard_check(ord("D"))))
 
 if(keyboard_check_pressed(vk_space))
 {
-	//show_debug_message("Should switch to attack.");
-	player_state = states.attacking;
-	obj_player.sprite_index = spr_array_attacking[player_direction];
-	if(!aud_lim_sword)
+	var xplace = 0;
+	var yplace = 0;
+	obj_player.skip = false;
+	// check for interaction first
+	switch(player_direction)
 	{
-		audio_play_sound(snd_sword, 10, false);
-		aud_lim_sword = true;
-		alarm[4] = 34;
+		case directions.up:
+			xplace = x;
+			yplace = y - 18;
+			break;
+		
+		case directions.down:
+			xplace = x;
+			yplace = y + 18;
+			break;
+		
+		case directions.right:
+			xplace = x + 18;
+			yplace = y;
+			break;
+		
+		case directions.left:
+			xplace = x - 18;
+			yplace = y;
+			break;
 	}
-	obj_player.image_speed = 1;
-	obj_player.alarm[3] = 15;
+	
+	var check = instance_place(xplace,yplace,obj_interactable);
+	
+	if(check != noone)
+	{
+		obj_textbox.text = check.myText;
+		
+		obj_chest_gold.image_speed = 1;
+	}
+	else
+	{
+		//show_debug_message("Should switch to attack.");
+		player_state = states.attacking;
+		obj_player.sprite_index = spr_array_attacking[player_direction];
+		if(!aud_lim_sword)
+		{
+			audio_play_sound(snd_sword, 10, false);
+			aud_lim_sword = true;
+			alarm[4] = 34;
+		}
+		obj_player.image_speed = 1;
+		obj_player.alarm[3] = 15;
+	}
 }
 
 //if (keyboard_check(vk_control)) 
