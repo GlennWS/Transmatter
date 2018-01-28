@@ -1,0 +1,3 @@
+// Hit alarm
+
+hit = false;

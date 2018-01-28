@@ -156,7 +156,13 @@ else if(player_state = states.attacking)
 			with(instance_place(x,y,obj_lifeform_enemy))
 			{
 				show_debug_message("Enemy hit");
-				//show_debug_message(other.hp);
+				with (obj_lifeform_enemy) {
+					other.hp -= 1;
+					
+					if (other.hp <= 0) {
+						instance_destroy();
+					}
+				}
 			}
 		}
 	}
