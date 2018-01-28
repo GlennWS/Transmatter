@@ -79,16 +79,17 @@ event_inherited();
 
 if(keyboard_check_pressed(vk_escape))
 {
-	if(!obj_player.paused)
-	{
-		obj_player.paused = true;
-		instance_deactivate_all(true);
-	}
-	else
-	{
-		obj_player.paused = false;
-		instance_activate_all();
-	}
+	//if(!obj_player.paused)
+	//{
+	//	obj_player.paused = true;
+	//	instance_deactivate_all(true);
+	//}
+	//else
+	//{
+	//	obj_player.paused = false;
+	//	instance_activate_all();
+	//}
+	game_end();
 }
 
 // Move up
