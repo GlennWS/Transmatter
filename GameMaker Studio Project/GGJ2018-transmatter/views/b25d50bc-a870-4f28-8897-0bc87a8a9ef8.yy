@@ -11,7 +11,7 @@
         "d0ba3357-2c74-4504-a785-3140768dfc87"
     ],
     "filterType": "GMSprite",
-    "folderName": "Player",
+    "folderName": "Player-old",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
