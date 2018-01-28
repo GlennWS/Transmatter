@@ -50,6 +50,8 @@ player_state = states.walking;
 player_direction = directions.down;
 player_speed = 3.5;
 
+heal_cooldown = 500;
+
 temp_pos_x = phy_position_x;
 temp_pos_y = phy_position_y;
 

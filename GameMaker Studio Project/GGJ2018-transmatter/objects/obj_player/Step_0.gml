@@ -223,6 +223,21 @@ if(player_state = states.walking)
 		player_speed = 3.5;
 	}
 	
+	if(keyboard_check_pressed(ord("F")))
+	{
+		// chug potion
+		if(obj_player.heal_cooldown >= 500)
+		{
+			script_execute(scr_health_potion());
+			audio_play_sound(snd_potion, 10, false);
+		}
+		else
+		{
+			audio_play_sound(snd_nope, 10, false);
+		}
+	}
+	
+	
 	
 	
 	if(keyboard_check(vk_nokey))
@@ -352,7 +367,17 @@ if(obj_player.experience >= obj_player.next_level)
 	obj_player.next_level = script_execute(scr_calculate_exp, obj_player.level);
 }
 
-	image_alpha = 1.0;
+if(obj_player.heal_cooldown < 500)
+{
+	obj_player.heal_cooldown += 1;
+}
+else
+{
+	obj_player.heal_cooldown = 500;
+}
+
+//show_debug_message(heal_cooldown);
+	//image_alpha = 1.0;
 
 //// Obtain gamepad counter
 //var moved = false;

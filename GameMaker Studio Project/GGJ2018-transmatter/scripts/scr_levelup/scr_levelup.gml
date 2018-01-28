@@ -4,7 +4,7 @@ with(obj_player)
 	level += 1;
 	experience = 0;
 
-	var additional_hp = 1 + random_range(1, 4);
+	var additional_hp = 1 + random_range(1, 3);
 	var additional_strength = 1 + random_range(1, 2)
 	var additional_constitution = 1 + random_range(1, 2);
 	
