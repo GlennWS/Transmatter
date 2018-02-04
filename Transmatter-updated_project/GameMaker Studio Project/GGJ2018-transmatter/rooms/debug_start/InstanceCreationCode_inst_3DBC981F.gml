@@ -1,0 +1,1 @@
+myroom = debug_start;
